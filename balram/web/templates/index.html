@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+		<!-- Basic Page Needs -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Balram - Interior & Furnitures</title>
+		
+		<meta name="keywords" content="Organic, Fresh Food, Farm Store">
+		<meta name="description" content="FreshMart - Organic, Fresh Food, Farm Store HTML Template">
+		<meta name="author" content="tivatheme">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{% static 'img/about/favicon1.png' %}" type="image/png">
+		
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700" rel="stylesheet">
+		
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="{% static 'libs/bootstrap/css/bootstrap.css' %}">
+		<link rel="stylesheet" href="{% static 'plugins/furniture-icon/style.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/font-awesome/css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/font-material/css/material-design-iconic-font.min.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/nivo-slider/css/nivo-slider.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/nivo-slider/css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/nivo-slider/css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/owl.carousel/assets/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'libs/slider-range/css/jslider.css' %}">
+     <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+    
+		
+		<!-- Template CSS -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" href="{% static 'css/reponsive.css' %}">
+	</head>
+	
+	<body class="home home-4">
+		<div id="all">
+			<!-- Header -->
+		
+			<nav class="navigation">
+				<div class="ps-container"><a class="ps-logo" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+					  <ul class="main-menu menu">
+						<li class="current-menu-item menu-item-has-children"><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'product_list' %}">Products</a></li>					 
+            <li><a href="{% url 'combo_list' %}">Special Offers</a></li>
+            <li><a href="{% url 'about' %}">About Us</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					  </ul>
+				  </div>
+			  </nav>
+			
+			
+			<!-- Main Content -->
+			<div id="content" class="site-content">				
+				<!-- Slideshow -->
+				<div class="section slideshow">
+					<div class="container">
+						<div class="tiva-slideshow-wrapper">
+							<div id="tiva-slideshow" class="nivoSlider">
+								<a href="{% url 'combo_list' %}">
+									<img class="img-responsive" src="{% static 'img/slideshow/home1-banner1.jpg' %}" alt="Slideshow Image">
+								</a>
+								<a href="{% url 'combo_list' %}">
+									<img class="img-responsive" src="{% static 'img/slideshow/home1-banner2.jpg' %}" alt="Slideshow Image">
+								</a>
+								<a href="{% url 'combo_list' %}">
+									<img class="img-responsive" src="{% static 'img/slideshow/home1-banner3.jpg' %}" alt="Slideshow Image">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!-- Payment Intro -->
+				
+				
+				
+				<!-- Product - Our Products -->
+				<div class="ps-section ps-home-categories">
+					<div class="ps-container">
+					  <div class="ps-section__header text-center">
+						<p>Wellcome to the shop</p>
+						<h3 class="ps-section__title">Shop by category</h3><span class="ps-section__line"></span>
+					  </div>
+					  <div class="ps-section__content ps-col-tiny">
+						<div class="row">
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-sofa-2"></i><a href="{% url 'product_list' %}">Sofa &amp; Chair</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-desk-2"></i><a href="{% url 'product_list' %}">Cooking</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-table-8"></i><a href="{% url 'product_list' %}">Shelf</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-office-chair"></i><a href="{% url 'product_list' %}">Seats</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-cabinet-1"></i><a href="{% url 'product_list' %}">Cabinets</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-lamp"></i><a href="{% url 'product_list' %}">Lighting</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-bed"></i><a href="{% url 'product_list' %}">Beedroom</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-shelf-3"></i><a href="{% url 'product_list' %}">Stands</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-armchair"></i><a href="{% url 'product_list' %}">Chairs</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-bathtub2"></i><a href="{% url 'product_list' %}">Bathtub</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-sofa2"></i><a href="{% url 'product_list' %}">Sofa</a></div>
+							  </div>
+							  <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 ">
+								<div class="ps-block--category" data-mh="category"><a class="ps-block__overlay" ></a><i class="furniture-desk2"></i><a href="{% url 'product_list' %}">Table</a></div>
+							  </div>
+						</div>
+					  </div>
+					  <div class="ps-section__footer text-center"><a class="ps-btn" href="{% url 'product_list' %}">View all categories</a></div>
+					</div>
+				  </div>
+							
+							<!-- Tab Content -->
+							<div class="tab-content">
+								<!-- All Products -->
+			
+			<div class="ps-section ps-home-best-product">
+      <div class="ps-container">
+        <div class="ps-section__header text-center">
+          <p>Choose your need item</p>
+          <h3 class="ps-section__title">BEST OUR PRODUCT</h3><span class="ps-section__line"></span>
+        </div>
+        <div class="ps-section__content mt-100">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="ps-product">
+                <div class="ps-product__thumbnail">
+                  <div class="ps-badge"><span>New</span></div>
+                  <a class="ps-product__favorite" ><i class="furniture-heart"></i></a><img src="{% static 'img/home/bbb-01.png' %}" alt=""><a class="ps-product__overlay"></a>
+                  <div class="ps-product__content full">
+                          
+                    <div class="ps-product__categories">Almirahs</div>
+                    
+                    <p class="ps-product__feature"><i class="furniture-delivery-truck-2"></i>Free Shipping in 24 hours</p>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                       
+                  <div class="ps-product__categories">Almirahs</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="ps-product">
+                <div class="ps-product__thumbnail">
+                  <div class="ps-badge"><span>New</span></div>
+                  <a class="ps-product__favorite" ><i class="furniture-heart"></i></a><img src="{% static 'img/home/bbb-03.png' %}" alt=""><a class="ps-product__overlay"></a>
+                  <div class="ps-product__content full">
+                          
+                    <div class="ps-product__categories">Beds & Dressings</div>
+                    
+                    <p class="ps-product__feature"><i class="furniture-delivery-truck-2"></i>Free Shipping in 24 hours</p>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                       
+                  <div class="ps-product__categories">Beds & Dresings</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="ps-product">
+                <div class="ps-product__thumbnail">
+                  <div class="ps-badge"><span>New</span></div>
+                  <a class="ps-product__favorite" ><i class="furniture-heart"></i></a><img src="{% static 'img/home/bbb-04.png' %}" alt=""><a class="ps-product__overlay"></a>
+                  <div class="ps-product__content full">
+                          
+                    <div class="ps-product__categories">Sofas</div>
+                    
+                    <p class="ps-product__feature"><i class="furniture-delivery-truck-2"></i>Free Shipping in 24 hours</p>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                       
+                  <div class="ps-product__categories">Sofas</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+              <div class="ps-product">
+                <div class="ps-product__thumbnail">
+                  <div class="ps-badge"><span>New</span></div>
+                  <a class="ps-product__favorite" ><i class="furniture-heart"></i></a><img src="{% static 'img/home/bbb-05.png' %}" alt=""><a class="ps-product__overlay"></a>
+                  <div class="ps-product__content full">
+                          
+                    <div class="ps-product__categories">Home Interiors</div>
+                    
+                    <p class="ps-product__feature"><i class="furniture-delivery-truck-2"></i>Free Shipping in 24 hours</p>
+                  </div>
+                </div>
+                <div class="ps-product__content">
+                       
+                  <div class="ps-product__categories">Home Interiors</div>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+			<div class="ps-section ps-home-collection">
+				<div class="ps-container">
+				  <div class="ps-section__header text-center">
+					<p>Just only Deccember</p>
+					<h3 class="ps-section__title">DEAL OF THE MONTH</h3><span class="ps-section__line"></span>
+				  </div>
+				  <div class="ps-section__content">
+					<div class="row">
+						  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+							<div class="ps-collection"><a href="{% url 'combo_list' %}"><img src="{% static 'img/offers/offer_2.jpg' %}" alt=""></a></div>
+						  </div>
+						  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+							<div class="ps-collection"><a href="{% url 'combo_list' %}"><img src="{% static 'img/offers/offer_5.jpg' %}" alt=""></a></div>
+						  </div>
+					</div>
+				  </div>
+				  <div class="ps-section__footer pt-50"><a ><img src="{% static 'img/home/deal-3.jpg' %}" alt=""></a></div>
+				</div>
+			  </div>
+			<div class="ps-home-open-time bg--parallax" style="background-image: url({% static 'img/background/home-feature.jpg' %});">
+				<div class="container">
+				  <div class="ps-section__content">
+					<h3>Visit our store</h3>
+					<p>117 Beernai Near Naro Hills Madhograrh  485115 Satna (MP) <br> (+91 ) 7987739126, (+91 ) 8959860086</p>
+					<div class="ps-open-time">
+					  <h4>Openning hour</h4>
+					  <p>Monday to Friday: 10:00 AM to 20:00 PM</p>
+					  <p>Saturday: 10:00 AM to 18:00 PM</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="ps-home-features-2">
+				<div class="container">
+				  <div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+						  <div class="ps-block--icon"><i class="furniture-delivery-truck-1"></i>
+							<h4>Free Shipping <span> ON PURCHASE OF ANY COMBO PACKAGE</span></h4>
+							<p>Shipping is free within Satna for all pre-paid orders above Rs. 10000</p>
+						  </div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+						  <div class="ps-block--icon"><i class="furniture-sofa"></i>
+							<h4>Everything Home <span> CHOOSE YOUR ITEM</span></h4>
+							<p>Shop zillions of finds, with new arrivals added daily.</p>
+						  </div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+						  <div class="ps-block--icon"><i class="furniture-credit-card-1"></i>
+							<h4>Secure Payment <span> INFORMATION SECURITY</span></h4>
+							<p>Multiple payment options available including Google Pay and Paytm.</p>
+						  </div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 ">
+						  <div class="ps-block--icon"><i class="furniture-hours"></i>
+							<h4>Support 24/7 <span> ALWAYS LISTEN</span></h4>
+							<p>We offer a 24/7 customer hotline so you’re never alone if you have a question.</p>
+						  </div>
+						</div>
+				  </div>
+				</div>
+			  </div>
+			
+			<!-- Footer -->
+				<footer class="ps-footer site-footer">
+					<div class="ps-footer__content">
+					  <div class="ps-container">
+						<div class="row">
+							  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+								<div class="ps-site-info site-info"><a class="ps-logo" href="{% url 'index' %}"><img src="{% static 'img/logo01-01.png' %}" alt=""></a>
+								  <p>Balram Interiors & Furniture is a global shop destination for all your household furniture needs. We sell modern furniture designed for your home and offer a wide variety of interior-designing solutions, making Balram Interiors & Furnitures the hub of a thriving home decor community.</p>
+								  		  <ul class="ps-social">
+									<li><a><i class="fa fa-facebook"></i></a></li>
+									<li><a ><i class="fa fa-twitter"></i></a></li>
+									<li><a ><i class="fa fa-dribbble"></i></a></li>
+								  </ul>
+								</div>
+							  </div>
+							  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+								<div class="row">
+									  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+										<div class="widget widget_footer widget_worktime">
+										  <h2 class="widget-title">Opening Hours<span></span></h2>
+										  <p>Monday - Friday <br> 10:00 am - 20:00 pm</p><p> ==== </p>
+										  <p>Satuday - Sunday <br> 10:00 am - 18:00 pm</p>
+										</div>
+									  </div>
+									  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
+										<div class="ps-widget ps-widget--footer widget widget_footer">
+										  <h2 class="widget-title">Contact Us<span></span></h2>
+										  <div class="block-content">
+											<div class="contact">
+												<p><strong>Address</strong> : 117 Beernai Near Naro Hills Madhograrh  485115 Satna (MP)</p>
+												<p><strong>Hotline</strong> : +91 7987739126 - +91 8959860086</p>
+												<p><strong>Email</strong> : <a href="mailto:support@domain.com">info@balramfurnitures.com</a></p>
+											</div>
+										</div>
+										</div>
+									  </div>
+									  
+								</div>
+							  </div>
+						</div>
+					  </div>
+					</div>
+			</footer>
+			
+			<style type="text/css">
+				.Sharethis{
+				  position: fixed;
+				  top:50%;
+				  right: 0px;
+				  background: green;
+				  width: 50px;
+				  height: 50px;
+				  text-align: center;
+				  border-radius: 10px 0px 0px 10px;
+				}
+		  
+				.Sharethis>a>i{
+				  color: #FFF;
+				  font-size: 40px;
+				  line-height: 50px;
+				}
+			  </style> 
+			  <!-- Sharethis -->
+			  <div class="Sharethis">
+				  <a href="https://wa.me/918959860086 "><i class="fa fa-whatsapp"></i></a>
+			  </div>
+			  <!-- Sharethis -->
+			  <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			
+			<!-- Go Up button -->
+			<div class="go-up">
+				<a >
+					<i class="fa fa-long-arrow-up"></i>
+				</a>
+			</div>
+			
+			<!-- Page Loader -->
+			<div id="page-preloader">
+				<div class="page-loading">
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+					<div class="dot"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Vendor JS -->
+		<script src="{% static 'libs/jquery/jquery.js' %}"></script>
+		<script src="{% static 'libs/bootstrap/js/bootstrap.js' %}"></script>
+		<script src="{% static 'libs/jquery.countdown/jquery.countdown.js' %}"></script>
+		<script src="{% static 'libs/nivo-slider/js/jquery.nivo.slider.js' %}"></script>
+		<script src="{% static 'libs/owl.carousel/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'libs/slider-range/js/tmpl.js' %}"></script>
+		<script src="{% static 'libs/slider-range/js/jquery.dependClass-0.1.js' %}"></script>
+		<script src="{% static 'libs/slider-range/js/draggable-0.1.js' %}"></script>
+		<script src="{% static 'libs/slider-range/js/jquery.slider.js' %}"></script>
+		<script src="{% static 'libs/elevatezoom/jquery.elevatezoom.js' %}"></script>
+		
+		<!-- Template CSS -->
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
+	
+
+
+</html>					
